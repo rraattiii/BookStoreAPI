@@ -1,0 +1,37 @@
+GET http://localhost:5126/books
+
+###
+
+GET http://localhost:5126/books/6
+
+
+###
+
+POST http://localhost:5126/books
+Content-Type: application/json
+
+{
+    "name" : "The Great Gatsby",
+    "author" : "F. Scott Fitzgerald",
+    "genre" : "Novel",
+    "price" : 10.99,
+    "publishDate" : "1925-04-10"
+}
+
+
+###
+
+PUT http://localhost:5126/books/6
+content-type: application/json
+
+{
+    "name" : "Notes from Underground",
+    "author" : "Feodor Dostoevsky",
+    "genre" : "Novel",
+    "price" : 10.99,
+    "publishDate" : "1864-01-01"
+}
+
+###
+
+DELETE http://localhost:5126/books/5
